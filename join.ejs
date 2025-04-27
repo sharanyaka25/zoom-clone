@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Join Zoom Clone</title>
+  <style>
+    body {
+      text-align: center;
+      background-color: rgb(155, 155, 207);
+      font-family: Arial, sans-serif;
+      padding-top: 100px;
+    }
+
+    input {
+      display: block;
+      margin: 10px auto;
+      padding: 10px;
+      font-size: 16px;
+      width: 250px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #2D8CFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Join a Meeting</h1>
+  <form action="/join" method="POST">
+    <input type="text" name="roomId" placeholder="Enter Room ID" required>
+    <input type="password" name="password" placeholder="Enter Password" required>
+    <button type="submit">Join</button>
+  </form>
+</body>
+</html>

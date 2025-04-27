@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zoom Clone</title>
+  <style>
+    body {
+      background-color: white;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding-top: 100px;
+    }
+
+    .logo {
+      font-size: 48px;
+      color: #2D8CFF;
+      font-weight: bold;
+      margin-bottom: 50px;
+    }
+
+    .button {
+      display: block;
+      width: 200px;
+      margin: 10px auto;
+      padding: 12px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .join {
+      background-color: #2D8CFF;
+      color: white;
+      border: none;
+    }
+
+    .signin {
+      background-color: white;
+      color: #2D8CFF;
+      border: 2px solid #dcdcdc;
+    }
+
+    .join:hover, .signin:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">zoom</div>
+  <a href="join.ejs"><button class="button join">Join a Meeting</button></a>
+  <button class="button signin">Sign In</button>
+  <form action="/create-room" method="POST">
+    <input type="text" name="username" placeholder="Enter your name" required />
+    <button type="submit">Create Room</button>
+  </form>
+ 
+</body>
+</html>
